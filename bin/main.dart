@@ -1,6 +1,7 @@
 import 'dart:io';
 import '../lib/contact.dart';
 import '../lib/add.dart'; // función creada por el Lider Carlos
+import '../lib/management.dart'; // funciones creada por Dev Hannah
 
 void main() {
   List<Contacto> agenda = [];
@@ -27,9 +28,11 @@ void main() {
         break;
       case '3':
         // Aprendiz 3 - Implementar lógica para buscar
+        buscarContacto(agenda);
         break;
       case '4':
         // Aprendiz 3 - Implementar lógica para eliminar
+        eliminarContacto(agenda);
         break;
       case '5':
         print('Saliendo de la agenda...');
