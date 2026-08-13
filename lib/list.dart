@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void listarContactos(List agenda) {
   print('\n--- Lista de Contactos ---');
 

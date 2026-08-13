@@ -1,12 +1,8 @@
 import 'dart:io';
-import '../list.dart';
-
-// El Aprendiz 2 definirá los atributos de esta clase
-class Contacto{
-  String nombre;
-  String telefono;
-  Contacto(this.nombre, this.telefono);
-}
+import '../lib/contact.dart';
+import '../lib/add.dart'; // función creada por el Lider Carlos
+import '../lib/management.dart'; // funciones creada por Dev Hannah
+import '../lib/list.dart'; // función creada por Dev Estefany
 
 void main() {
   List<Contacto> agenda = [];
@@ -25,16 +21,20 @@ void main() {
 
     switch (opcion) {
       case '1':
-        // TODO: Aprendiz 1 - Implementar lógica para agregar
+        // Se llama a la función externa pasando la lista actual
+        agregarContacto(agenda);
         break;
       case '2':
-        // TODO: Aprendiz 2 - Implementar lógica para listar
+        // Aprendiz 2 - Implementar lógica para listar
+        listarContactos(agenda);
         break;
       case '3':
-        // TODO: Aprendiz 3 - Implementar lógica para buscar
+        // Aprendiz 3 - Implementar lógica para buscar
+        buscarContacto(agenda);
         break;
       case '4':
-        // TODO: Aprendiz 3 - Implementar lógica para eliminar
+        // Aprendiz 3 - Implementar lógica para eliminar
+        eliminarContacto(agenda);
         break;
       case '5':
         print('Saliendo de la agenda...');
