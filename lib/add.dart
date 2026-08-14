@@ -1,5 +1,3 @@
-// lib/add.dart
-
 import 'dart:io';
 import 'contact.dart';
 
